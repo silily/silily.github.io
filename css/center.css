@@ -1,6 +1,9 @@
 *{margin:0;padding:0;}
-.head{
-  padding-top: 10px;
+body{
+	background-image: url(../images/bg/bg2.jpg);
+	padding-top: 10px;
+	background-attachment: fixed;
+	background-repeat: repeat;
 }
 .navigation li {
  
@@ -14,4 +17,7 @@
   flex: auto;
   -webkit-transition: all .5s;
   /* Safari */
+}
+p{
+	color:#03F;
 }
