@@ -202,6 +202,7 @@ button
 .content .text-section h2,.sub-heading,p
 {
 	margin: 0 50px;
+	padding: 10px 0;
 }
 
 .article-preview > div
@@ -212,7 +213,7 @@ button
 
 .article-preview:nth-child(odd)  /*第奇数个.article-preview会颜色加深*/
 {
-	background-color: rgba(255,255,255,0.05);
+	background-color: rgba(255,255,255,0.25);
 }
 
 .article-preview:after
@@ -312,7 +313,7 @@ ul.share-group
 
 .main-wrapper
 {
-	background:  #444 url(../images/bg/banner1.jpg);
+	background:  #444 url(../images/bg/banner.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
