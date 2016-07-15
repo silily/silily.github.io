@@ -6,6 +6,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="images/overall/favicon.ico" />
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="font-awesome-4.5.0/css/font-awesome.min.css">
 <audio autoplay="autoplay" preload="auto" src="bgm/She.mp3">
     </audio>
 </head>
@@ -18,17 +19,20 @@
                     <li><a href="#" class="active">首页</a></li>
                     <li><a href="#">链接2</a></li>
                     <li><a href="#">链接3</a></li>
-                    <li><a href="#">链接4</a></li>
+                    <li id="sidebar_trigger"><a href="#">链接4</a></li>
                 </ul>
             </nav>
             <div id="banner">
                 <div class="inner">
-                    <h1>南街</h1>
+                    <h1>南&nbsp;&nbsp;&nbsp;&nbsp;街</h1>
                     <p class="sub-heading">生活，是一种情怀。
                     </p>
                     <button>了解</button>
                     <div class="more">
                         更多
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-chevron-down"></i>
                     </div>
                 </div>
             </div>
@@ -44,9 +48,9 @@
                         </p>
                     </div>
                     <div class="icon-group">
-                        <span class="icon">item1</span>
-                        <span class="icon">item2</span>
-                        <span class="icon">item3</span>
+                        <span class="icon"><a href="#" title="book"><i class="fa fa-book"></i></a></span>
+                        <span class="icon"><a href="#" title="game"><i class="fa fa-codiepie"></i></a></span>
+                        <span class="icon"><a href="#" title="purchase"><i class="fa fa-reddit-alien"></i></a></span>
                     </div>
                 </div>
             </section>
@@ -122,17 +126,30 @@
 
         <footer><!-- 页脚开始 -->
             <ul class="share-group">
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
+                <li><a href="#" title="qq"><i class="fa fa-qq"></i></a></li>
+                <li><a href="#" title="book"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" title="weixin"><i class="fa fa-weixin"></i></a></li>
+                <li><a href="#" title="weibo"><i class="fa fa-weibo"></i></a></li>
+                <li><a href="#" title="renren"><i class="fa fa-renren"></i></a></li>
+                <li><a href="#" title="steam"><i class="fa fa-steam"></i></a></li>
             </ul>
             <div class="copy">
                 &copy 南街
             </div>
         </footer><!-- 页脚结束 -->
     </div>
+    <div class="mask"></div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="#">item1</a></li>
+            <li><a href="#">item2</a></li>
+            <li><a href="#">item3</a></li>
+            <li><a href="#">item4</a></li>
+            <li><a href="#">item5</a></li>
+        </ul>
+    </div>
+    <button class="back-to-top">返回顶部</button>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
