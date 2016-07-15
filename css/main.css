@@ -100,6 +100,11 @@ p
 	letter-spacing: 0.5px;
 }
 
+/*.gray-section p:after
+{
+	content: "——颜菲"
+}*/
+
 button
 {
 	border: none;
@@ -119,6 +124,11 @@ button
 	margin-top: 140px;
 }
 
+#banner .inner i
+{
+	transform: rotate(0);
+}
+
 .sub-heading
 {
 	line-height: 30px;
@@ -130,7 +140,7 @@ button
 {
 	font-size: 20px;
 	font-weight: bold;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
 
 .hr
@@ -167,6 +177,22 @@ button
 .icon-group
 {
 	margin-top: 50px;
+}
+
+.icon .fa
+{
+	font-size: 40px;
+	text-align: center;
+	vertical-align: middle;
+	transform: rotate(-45deg);
+	position: relative;
+	top: 10px;
+	left: 1px;
+}
+
+.icon a
+{
+	color: #fff;
 }
 
 .wrapper
@@ -297,13 +323,13 @@ ul.share-group
 	display: block;
 	width: 1000px;
 	margin: 0 auto;
-	padding: 50px;
+	padding: 40px;
 }
 
 .share-group li
 {
 	display: inline-block;
-	padding: 10px;
+	padding: 15px;
 }
 
 .copy
@@ -318,4 +344,69 @@ ul.share-group
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+	overflow: hidden;
+}
+
+.share-group i
+{
+	font-size: 30px;
+	color: #fff;
+}
+
+.share-group i:hover,.icon i:hover
+{
+	color: #48D21E;
+}
+
+.mask
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.3);
+	display: none;
+}
+
+#sidebar
+{
+	position: fixed;
+	top: 0;
+	right: -300px;
+	bottom: 0;
+	background: #333;
+	width: 300px;
+	color: #fff;
+	padding: 20px 0;
+	transform: right 0.5s;  /*动画速度0.5S*/
+}
+
+#sidebar ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar ul a
+{
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 30px;
+	width: 100%;
+	display: inline-block;
+}
+
+#sidebar ul a:hover
+{
+	background: #444;
+}
+
+.back-to-top
+{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	border: 1px solid #999;
 }
